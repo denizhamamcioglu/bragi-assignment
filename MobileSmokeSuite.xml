@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Bragi Mobile App - Smoke Suite" verbose="1">
+    <listeners>
+        <listener class-name="core.listeners.SuiteListener"></listener>
+        <listener class-name="core.listeners.TestListener"></listener>
+        <listener class-name="core.listeners.InvocationListener"></listener>
+        <listener class-name="core.listeners.AnnotationTransformer"></listener>
+    </listeners>
+
+    <test name="Onboarding Tests">
+        <classes>
+            <class name="onboarding.SuccessfulOnboardingTest"/>
+        </classes>
+    </test>
+</suite>

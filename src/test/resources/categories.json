@@ -1,0 +1,26 @@
+[
+  {
+    "name": "API Issues",
+    "traceRegex": ".*HttpStatusException.*"
+  },
+
+  {
+    "name": "Locator Issues",
+    "traceRegex": ".*NoSuchElementException.*"
+  },
+
+  {
+    "name": "Timeout Issues",
+    "traceRegex": ".*TimeoutException.*"
+  },
+
+  {
+    "name": "File Related Issues",
+    "traceRegex": ".*FileNotFoundException.*"
+  },
+
+  {
+    "name": "Skipped Tests",
+    "matchedStatuses": ["skipped"]
+  }
+]

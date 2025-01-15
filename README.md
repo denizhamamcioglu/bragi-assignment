@@ -86,8 +86,9 @@ Or you can customize these options by similar to the command below:
 
 15. To generate a HTML test report using Allure Reports, you can use 2 options. Both of them depend on Allure being installed on your local host. <br>
 To install Allure, follow the [Official Allure Installation Guide](https://allurereport.org/docs/install/)
-   * `allure:serve`: This command will automatically generate a report and open up your default browser to display it.
-   * `allure:report`: This command will generate all the necessary report files but will not display the report automatically.
+   * `allure serve`: This command will automatically generate a report and open up your default browser to display it.
+   * `allure generate .\target\allure-results\ -o ./allure-report --clean`: This command will generate all the necessary report files and place them inside the allure-report folder.
+   * `allure open .\allure-report`: This command will open up the previously generated report inside the allure-report folder.
 
 
 #### Available Run Parameters

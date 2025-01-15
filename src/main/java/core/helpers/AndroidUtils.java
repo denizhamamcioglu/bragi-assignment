@@ -1,8 +1,6 @@
 package core.helpers;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.appium.SelenideAppium;
-import core.base.DriverManager;
 import core.config.Constants;
 import data.Enums.AndroidPermissions;
 
@@ -44,10 +42,19 @@ public class AndroidUtils {
         }
     }
 
+    /**
+     * Revokes the given permissions using ADB commands.
+     * @param permission - Permission to be revoked. Check out AndroidPermissions enum for further details.
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void revokePermission(AndroidPermissions permission) throws IOException, InterruptedException {
         CommandLineUtils.executeCommand(String.format("adb shell pm revoke %s %s", Constants.PACKAGE_NAME, permission.getValue()));
     }
 
+    /**
+     * Restarts the app.
+     */
     public static void restartApp() {
         SelenideAppium.terminateApp(Constants.PACKAGE_NAME);
         SelenideAppium.launchApp();

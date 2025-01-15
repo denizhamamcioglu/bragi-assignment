@@ -5,8 +5,6 @@ import com.codeborne.selenide.SelenideElement;
 import static com.codeborne.selenide.appium.SelenideAppium.$;
 import static io.appium.java_client.AppiumBy.id;
 
-//import static com.codeborne.selenide.appium.AppiumSelectors.byText;
-
 public class OnboardingPageSelectors {
     // Divs
     public static SelenideElement sliderButton = $(id("com.bragi.app:id/thumb"));

@@ -46,7 +46,6 @@ public class Utils {
         Configuration.assertionMode = AssertionMode.STRICT;
         Configuration.timeout = Constants.TIMEOUT;
         Configuration.pageLoadTimeout = Constants.LOAD_TIMEOUT;
-        Configuration.downloadsFolder = Constants.DOWNLOAD_PATH;
         Configuration.screenshots = true;
         Configuration.browser = DriverManager.class.getName();
     }
@@ -75,7 +74,6 @@ public class Utils {
             appiumService.stop();
         }
     }
-
 
     /**
      * Executes the steps of test session prerequisites.

@@ -10,6 +10,13 @@ import java.io.InputStreamReader;
 public class CommandLineUtils {
     private static final Logger log = LoggerFactory.getLogger(CommandLineUtils.class);
 
+    /**
+     * Executes the given command using the command line interface of the current OS. Can adapt to Linux, Windows and MacOS operating systems.
+     * @param command - Command to be executed.
+     * @return - Console output.
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static String executeCommand(String command) throws IOException, InterruptedException {
         log.info(String.format("Executing command: %s", command));
 

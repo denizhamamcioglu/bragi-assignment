@@ -5,7 +5,7 @@ import org.testng.xml.XmlSuite;
 
 /**
  * @author Deniz Hamamcioglu - denizhamamcioglu@gmail.com
- * Holds the constant values which are not subject to change that frequently that are used accross the automation suite.
+ * Holds the constant values which are not subject to change that frequently and are used accross the automation suite.
  */
 public class Constants {
     public static final int TIMEOUT = 45000;

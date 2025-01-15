@@ -20,6 +20,11 @@ import java.net.URL;
  */
 @NullMarked
 public class DriverManager implements WebDriverProvider {
+    /**
+     * Creates a new Appium driver in order to interact with the desired mobile device/emulator.
+     * @param capabilities - Capabilities object that will be used to create the driver instance.
+     * @return AndroidDriver instance.
+     */
     @Override
     @CheckReturnValue
     @NonNull
@@ -50,6 +55,10 @@ public class DriverManager implements WebDriverProvider {
         return null;
     }
 
+    /**
+     * Returns the URL object of the Appium server.
+     * @return URL object of the Appium server.
+     */
     private static URL appiumUrl() {
         try {
             return new URL(Constants.APPIUM_FULL_URL);
